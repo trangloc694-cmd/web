@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<head>
+
+	<html lang="en">
+	
+	<meta charset="UTF-8">
+	
+	<title>Our Contact</title>
+	
+    <style>
+        /* Body styling */
+       body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #ebf1fb;
+    }
+		.navbar {
+      background-color: #333;
+      padding: 10px 0;
+	}
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+		h2, h3 {
+      text-align: center;
+      margin-top: 30px;
+    }
+        form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #b0cbfd;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+		
+		.form-title {
+			margin: 0;
+			padding: 10px 0;
+		}
+
+        /* Label styling */
+       label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+
+        /* Input fields styling */
+        input[type="text"],
+		select,
+		textarea {
+		width: 100%;
+		padding: 10px;
+		margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+        /* Textarea styling */
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Radio buttons styling */
+        radio-group {
+		margin-top: 15px;
+		}
+
+		.radio-group label {
+		margin-right: 10px;
+		font-weight: normal;
+		}
+		
+		textarea {
+			background-color: #f3faff; 
+			color: #333; 
+		}	
+  
+        button {
+            width: 48%;
+            padding: 12px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+
+<body>
+
+<div>
+<!--NAVBAR-->
+<nav class="navbar">
+		&nbsp; &nbsp; &nbsp; <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+	<a href="about.html">About</a> &nbsp; &nbsp; &nbsp;
+	<a href="contact.html">Contact</a> &nbsp; &nbsp; &nbsp;
+</nav>
+<h2> Interested and need a consultant? Contact Us via phone, email or inqury phone<h2/>
+
+<h3 class="form-title">Job Inquiry Form</h3>
+<form action="https://google.com/" method="post">
+    <!-- First Name Field -->
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <!-- Last Name Field -->
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <!-- Dropdown Field -->
+    <label for="options">Department Category:</label>
+    <select id="options" name="options">
+        <option value="option1">Finance</option>
+        <option value="option2">Warehouse Management</option>
+        <option value="option3">Procurement</option>
+		<option value="option4">Marketing</option>
+    </select>
+
+    <!-- Radio Button Group -->
+    <div class="radio-group">
+        <label>Choose your region</label>
+        <input type="radio" id="radio1" name="region" value="East">
+        <label for="radio1">East</label>
+        <input type="radio" id="radio2" name="preferenc" value="West">
+        <label for="radio2">West</label>
+    </div>
+
+    <!-- Comment Area -->
+    <label for="comments"></label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+
+    <!-- Submit and Reset Buttons -->
+    <button type="submit" class="submit">Submit</button>
+    <button type="reset" class="reset">Reset</button>
+</form>
+</div>
+
+</body>
+</html>
